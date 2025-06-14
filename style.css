@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    height: 400vh;
+    height: 410vh;
     background-color: #008cff;
     font-family: 'Poppins';
 }
@@ -496,7 +496,72 @@ nav .bx-menu, nav .bx-x{
     background-color: #1c6bff;
 }
 
+footer{
+    transform: translateY(-100%);
+    position: absolute;
+    left: 0%;
+    top: 410vh;
+    background-color: #ffe100;
+    width: 100%;
+    height: 100px;
+    color: #426bff;
+    font-weight: 600;
+}
+
+footer h2{
+    transform: translateY(-50%);
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    font-size: 30px;
+}
+
+footer .links{
+    transform: translate(-100%, -50%);
+    position: absolute;
+    left: 98%;
+    top: 50%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+footer .links i{
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 100ms ease;
+    color: #000;
+}
+
+footer .links i:nth-child(1):hover{
+    color: #2d73ff;
+}
+
+footer .links i:nth-child(2):hover{
+    color: #bf00ff;
+}
+
+footer .links i:nth-child(3):hover{
+    color: #838383;
+}
+
+footer .links i:nth-child(4):hover{
+    color: #ff0000;
+}
+
+footer .links i:nth-child(5):hover{
+    color: #0095ff;
+}
+
+footer .links i:nth-child(6):hover{
+    color: #ff00f2;
+}
+
 @media screen and (max-width: 768px){
+    body{
+        height: 450vh;
+    }
+
     nav{
         height: 60px;
     }
@@ -640,7 +705,32 @@ nav .bx-menu, nav .bx-x{
     #contact{
         width: 250px;
     }
+
     #contact input, #contact textarea, #contact button{
         width: 90%;
+    }
+    
+    footer{
+        top: 450vh;
+    }
+
+    footer h2{
+        transform: translateY(0%);
+        top: 3%;
+        left: 1%;
+        font-size: 20px;
+    }
+
+    footer .links{
+        transform: translate(0%, -50%);
+        left: 0%;
+        top: 60%;
+        width: 100%;
+        justify-content: space-around;
+        gap: 0px;
+    }
+
+    footer .links i{
+        font-size: 30px;
     }
 }
